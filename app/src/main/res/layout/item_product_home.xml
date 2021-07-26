@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:qinc="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_img_home"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/logo_sucess"
+        android:layout_gravity="center"
+        />
+
+        <TextView
+            android:id="@+id/item_name_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Product Name"
+            android:textSize="@dimen/_17ssp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="end"
+            />
+
+    <TextView
+        android:id="@+id/item_price_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Product Price"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="#3E3C3C"
+        android:padding="@dimen/_5sdp"
+        android:layout_gravity="start"
+        />
+
+    <pl.polak.clicknumberpicker.ClickNumberPickerView
+        android:id="@+id/item_number_picker_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pickers_background_color="#C19D1A"
+        app:value_background_color="#E4C700"
+        app:value_text_color="@android:color/white"
+        android:layout_margin="@dimen/_5sdp"
+        app:integer_priority="true"
+        app:min_value="0"
+        app:max_value="3"
+        />
+
+</LinearLayout>

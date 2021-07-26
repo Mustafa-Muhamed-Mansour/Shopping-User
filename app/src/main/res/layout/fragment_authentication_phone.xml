@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/parent_scroll_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AuthenticationPhoneFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/img_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="22dp"
+            android:src="@drawable/ic_back"
+            android:background="@color/white"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_statment_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التحقق من الرقم"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:textSize="@dimen/_27ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/txt_tasgel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تسجيل دخول"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:textSize="@dimen/_25ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            />
+
+        <TextView
+            android:id="@+id/txt_anshe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أو أنشيء حساب جديد"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:textSize="@dimen/_25ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            >
+
+
+        <TextView
+            android:id="@+id/txt_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اهلا وسهلا بك في بقالة الغلابة"
+            android:textSize="@dimen/_17ssp"
+            android:textColor="@android:color/darker_gray"
+            />
+
+            <TextView
+                android:id="@+id/txt_done_sent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تم ارسال رسالة نصية ع الرقم هذا"
+                android:textSize="@dimen/_17ssp"
+                android:textColor="@android:color/darker_gray"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            >
+
+
+        <TextView
+            android:id="@+id/text_beautiful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حتي نقوم بخدمتك بطريقة جميلة"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_3sdp"
+            />
+
+            <RelativeLayout
+                android:id="@+id/relative_spp_and_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="gone"
+                >
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/cpp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccp_defaultNameCode="EG"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDECEC"
+                    android:layout_toEndOf="@id/cpp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:hint="Enter your phone"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    />
+
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_write_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قم بكتابة رقم الهاتف :"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_below="@id/text_beautiful"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            >
+
+            <EditText
+                android:id="@+id/edit_verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDECEC"
+                android:layout_margin="@dimen/_5sdp"
+                android:hint="أدخل كود التفعيل"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                android:inputType="phone"
+                android:gravity="center"
+                android:padding="@dimen/_7sdp"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_code_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_defaultNameCode="EG"
+            android:layout_margin="@dimen/_2sdp"
+            />
+
+            <EditText
+                android:id="@+id/edit_write_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDECEC"
+                android:layout_margin="@dimen/_2sdp"
+                android:hint="Enter your phone"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                android:inputType="phone"
+                android:gravity="center"
+                android:padding="@dimen/_7sdp"
+                />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            >
+
+        <Button
+            android:id="@+id/btn_sent_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button"
+            android:text="أرسل الرمز"
+            android:textSize="@dimen/_25ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"
+
+            />
+
+            <Button
+                android:id="@+id/btn_sent_verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:text="تأكيد الرمز"
+                android:textSize="@dimen/_25ssp"
+                android:textColor="@color/black"
+                android:padding="@dimen/_5sdp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

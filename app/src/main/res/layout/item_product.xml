@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_img_product"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/logo_sucess"
+            android:layout_gravity="center"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        >
+
+    <TextView
+        android:id="@+id/item_name_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Product Name"
+        android:textSize="@dimen/_17ssp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:gravity="center"
+        />
+
+        <TextView
+            android:id="@+id/item_price_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Product Price"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_margin="@dimen/_5sdp"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/item_status_product"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Product Status"-->
+<!--            android:textSize="@dimen/_20ssp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_margin="@dimen/_5sdp"-->
+<!--            android:padding="@dimen/_5sdp"-->
+<!--            android:gravity="center"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/item_quantity_product"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="0.5"-->
+<!--            android:text="Product Quantity"-->
+<!--            android:textSize="@dimen/_15ssp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_margin="@dimen/_5sdp"-->
+<!--            android:padding="@dimen/_5sdp"-->
+<!--            android:gravity="center"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>
