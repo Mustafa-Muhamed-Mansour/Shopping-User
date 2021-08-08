@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeFragment"
+    tools:context=".home.HomeFragment"
     android:orientation="vertical"
     >
 
@@ -407,29 +407,19 @@
 
     </androidx.core.widget.NestedScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@android:color/white"
-        app:menu="@menu/menu"
-        />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="@dimen/_50sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/ic_market"
-        android:clickable="true"
-        android:visibility="gone"
-        />
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginBottom="@dimen/_50sdp"-->
+<!--        android:layout_marginEnd="@dimen/_20sdp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:src="@drawable/ic_market"-->
+<!--        android:clickable="true"-->
+<!--        android:visibility="gone"-->
+<!--        />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

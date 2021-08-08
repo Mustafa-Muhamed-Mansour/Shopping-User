@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu_account"
+        android:id="@+id/accountFragment"
         android:title="حسابي"
         android:icon="@drawable/account"
         />
 
     <item
-        android:id="@+id/menu_requirement"
+        android:id="@+id/orderFragment"
         android:title="طلباتي"
         android:icon="@drawable/shopping_bag"
         />
@@ -20,7 +20,7 @@
 <!--        />-->
 
     <item
-        android:id="@+id/menu_home"
+        android:id="@+id/homeFragment"
         android:title="الرئيسية"
         android:icon="@drawable/home"
         />

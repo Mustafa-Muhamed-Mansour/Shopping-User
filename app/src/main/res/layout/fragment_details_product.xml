@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:qinc="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".DetailsProductFragment"
+    tools:context=".product.DetailsProductFragment"
     android:orientation="vertical"
     android:background="@android:color/white">
 
@@ -40,7 +40,18 @@
             />
 
             <ImageView
-                android:id="@+id/img_love_product"
+                android:id="@+id/img_love_red_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_love_red"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/img_love_white_product"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_love"
@@ -146,7 +157,7 @@
             android:layout_marginEnd="@dimen/_20sdp"
             android:layout_marginBottom="@dimen/_5sdp"
             android:background="@drawable/background_button_add_to_cart"
-            android:text="Add To Cart"
+            android:text="إضافة إلي سلة المشتريات"
             android:textColor="@android:color/white"
             android:textSize="@dimen/_15ssp"
             android:textAllCaps="false"
